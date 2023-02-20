@@ -1,10 +1,10 @@
 # Meta Data for SEO
 
 ## Homepage
-title = "Doks"
+title = "Ludwig"
 titleSeparator = "-"
-titleAddition = "Modern Documentation Theme"
-description = "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+titleAddition = "Ludwig Documentation"
+description = "Ludwig is a functional logic programming language designed to compose and play music."
 
 ## Documentation
 # docsVersion = "0.3"
@@ -65,10 +65,10 @@ defaultImage = "default-image.png" # put in `./assets/images/`
 fillImage = "1270x740 Center" # normalize image size
 
 # Footer
-footer = "Powered by <a class=\"text-muted\" href=\"https://www.netlify.com/\">Netlify</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
+footer = "Powered by <a class=\"text-muted\" href=\"https://pages.github.com/\">GitHub Pages</a>, <a class=\"text-muted\" href=\"https://gohugo.io/\">Hugo</a>, and <a class=\"text-muted\" href=\"https://getdoks.org/\">Doks</a>"
 
 # Feed
-copyRight = "Copyright (c) 2020-2021 Henk Verlinde"
+copyRight = "Copyright (c) 2023 Ludwig Developers"
 
 # Alert
 alert = false

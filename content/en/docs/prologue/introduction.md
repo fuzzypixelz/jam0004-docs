@@ -1,7 +1,7 @@
 ---
 title: "Introduction"
-description: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
-lead: "Doks is a Hugo theme for building secure, fast, and SEO-ready documentation websites, which you can easily update and customize."
+description: "Ludwig is a functional logic programming language designed to compose and play music."
+lead: "Ludwig is a functional logic programming language designed to compose and play music."
 date: 2020-10-06T08:48:57+00:00
 lastmod: 2020-10-06T08:48:57+00:00
 draft: false
@@ -13,46 +13,28 @@ weight: 100
 toc: true
 ---
 
-## Get started
+## Getting started
 
-There are two main ways to get started with Doks:
+First, clone the source repository of Ludwig and build the project using `npm
+run luwig`, my tests in particular were done on macOS using npm `v9.4.0` and
+node `v19.6.1`.
 
-### Tutorial
+Next, webpack should generate the build files under `dest/`. Simply open the
+`index.html` with your browser of choice (Chromium-based browsers are recommended).
 
-{{< alert icon="👉" text="The Tutorial is intended for novice to intermediate users." />}}
+## Rationale
 
-Step-by-step instructions on how to start a new Doks project. [Tutorial →](https://getdoks.org/tutorial/introduction/)
+Ludwig is [Innf107](https://github.com/Innf107) and
+[fuzzypixelz'](https://github.com/fuzzypixelz) submission for the 4th [Lang
+Jam](https://github.com/langjam/langjam). This edition's theme is:
 
-### Quick Start
+> The sound(ness) of one hand typing
 
-{{< alert icon="👉" text="The Quick Start is intended for intermediate to advanced users." />}}
+At first we thought of making a language where all tokens can be typed using
+_only_ one side of the keyboard — we would quickly get disenchanted with this
+idea. After a fair bit of Brainstorming™ we thought of making a language which
+plays musical notes while _de-duplicating_ notes of the same pitch (more on this
+later).
 
-One page summary of how to start a new Doks project. [Quick Start →]({{< relref "quick-start" >}})
-
-## Go further
-
-Recipes, Reference Guides, Extensions, and Showcase.
-
-### Recipes
-
-Get instructions on how to accomplish common tasks with Doks. [Recipes →](https://getdoks.org/docs/recipes/project-configuration/)
-
-### Reference Guides
-
-Learn how to customize Doks to fully make it your own. [Reference Guides →](https://getdoks.org/docs/reference-guides/security/)
-
-### Extensions
-
-Get instructions on how to add even more to Doks. [Extensions →](https://getdoks.org/docs/extensions/breadcrumb-navigation/)
-
-### Showcase
-
-See what others have build with Doks. [Showcase →](https://getdoks.org/showcase/electric-blocks/)
-
-## Contributing
-
-Find out how to contribute to Doks. [Contributing →](https://getdoks.org/docs/contributing/how-to-contribute/)
-
-## Help
-
-Get help on Doks. [Help →]({{< relref "how-to-update" >}})
+We then decided to design Ludwig as a functional logic programming language on
+the browser.
