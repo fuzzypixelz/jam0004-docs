@@ -2,5 +2,4 @@ assets/js/index.js
 assets/js/katex.js
 assets/js/vendor
 assets/js/ludwig.js
-assets/scss/ludwig.scss
 node_modules
