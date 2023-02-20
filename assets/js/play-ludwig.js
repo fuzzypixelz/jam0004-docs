@@ -18,8 +18,19 @@ for (const exampleDiv of document.querySelectorAll('div.example')) {
     buttonChild.textContent = 'Play'
     buttonChild.classList.add('btn')
 
-    buttonChild.onclick = () => {
+    buttonChild.addEventListener('click', () => {
         errorChild.textContent = '';
         playLudwigProgram(codeChild.textContent, error => errorChild.textContent = error)
-    }
+    })
 }
+
+const textarea = document.querySelector('textarea.playground')
+if (textarea != null){
+    const errorMessageElement = document.querySelector('#error-messages')
+    console.log(document.querySelector('#playground-play'))
+    document.querySelector('#playground-play').addEventListener('click', () => {
+        errorMessageElement.textContent = ''
+        playLudwigProgram(textarea.textContent, error => errorMessageElement.textContent = error)
+    })
+}
+

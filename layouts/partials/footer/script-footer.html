@@ -71,6 +71,11 @@
   {{ $slice = $slice | append $toTopButton -}}
 {{ end -}}
 
+{{ $ludwig := resources.Get "js/ludwig.js" -}}
+{{ $playludwig := resources.Get "js/play-ludwig.js" -}}
+<script src="{{ $ludwig.RelPermalink }}" type="module"></script>
+<script src="{{ $playludwig.RelPermalink }}" type="module"></script>
+
 {{ $js := $slice | resources.Concat "main.js" -}}
 
 {{ if eq (hugo.Environment) "development" -}}
