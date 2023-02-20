@@ -4,7 +4,7 @@
 title = "Ludwig"
 titleSeparator = "-"
 titleAddition = "Ludwig Documentation"
-description = "Ludwig is a functional logic programming language designed to compose and play music."
+description = "Ludwig is a lazy functional logic programming language designed to compose and play music."
 
 ## Documentation
 # docsVersion = "0.3"
