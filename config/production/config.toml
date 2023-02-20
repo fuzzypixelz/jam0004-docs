@@ -1,1 +1,2 @@
-canonifyURLs = false
+canonifyURLs = true
+baseurl = "https://fuzzypixelz.github.io/jam0004-docs"
