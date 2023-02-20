@@ -30,7 +30,8 @@ if (textarea != null){
     console.log(document.querySelector('#playground-play'))
     document.querySelector('#playground-play').addEventListener('click', () => {
         errorMessageElement.textContent = ''
-        playLudwigProgram(textarea.textContent, error => errorMessageElement.textContent = error)
+        const textarea = document.querySelector('textarea.playground')
+        playLudwigProgram(textarea.value, error => errorMessageElement.textContent = error)
     })
 }
 
