@@ -2,4 +2,5 @@ assets/js/index.js
 assets/js/katex.js
 assets/js/vendor
 assets/js/ludwig.js
+assets/js/play-ludwig.js
 node_modules
