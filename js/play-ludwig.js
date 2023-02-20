@@ -1,4 +1,4 @@
-import { playLudwigProgram } from '/js/ludwig.js';
+import { playLudwigProgram } from './ludwig.js';
 
 for (const exampleDiv of document.querySelectorAll('div.example')) {
     const program = exampleDiv.textContent
