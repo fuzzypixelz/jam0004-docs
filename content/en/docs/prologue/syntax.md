@@ -50,16 +50,18 @@ pitch =
   | 'G#' | 'Ab'
   | '_'
   
-octave = (number '/')?
-
 value = (number '/')?
+
+octave = ('/' number)?
 
 note = value pitch octave
 ```
 
 Values are expressed as their own inverse fractions. For example `8/C/4` denotes
 the [Middle C](https://en.wikipedia.org/wiki/C_(musical_note)#Middle_C) note of
-value (i.e duration) 1/8. Underscore (i.e `_`) denotes a pause.
+value (i.e duration) 1/8. Underscore (i.e `_`) denotes a pause. A note's value
+default's to `8` while its octave defaults to `4`. Hence `C`, `8/C`, and `C/4`
+are all parsed as `8/C/4`.
 
 ## Lists
 
