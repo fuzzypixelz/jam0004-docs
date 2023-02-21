@@ -47,7 +47,7 @@ note = value pitch octave
 ```
 
 Values are expressed as their own inverse fractions. For example `8/C/4` denotes
-the[Middle C](https://en.wikipedia.org/wiki/C_(musical_note)#Middle_C) note of
+the [Middle C](https://en.wikipedia.org/wiki/C_(musical_note)#Middle_C) note of
 value (i.e duration) 1/8.
 
 ## Choice
