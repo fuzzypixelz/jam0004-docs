@@ -4,6 +4,7 @@ description: "Ludwig Syntax"
 lead: ""
 draft: false
 images: []
+weight: 20
 ---
 
 In the following `expr*` means _zero or more_ repetitions of the syntax form
