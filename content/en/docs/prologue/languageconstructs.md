@@ -179,7 +179,7 @@ nextOctave C
 You may notice that Ludwig doesn't have any built-in syntax for numbers or *any* data structures besides lists.
 Does this mean you cannot express anything non-trivial? 
 
-No! Ludwig has the ability to [declare constants]({{< relref "/docs/prologue/syntax.md" >}}#constants) (values that only unify with themselves) that are powerful enough to express any algebraic data type.
+No! Ludwig has the ability to [declare constants]({{< relref "/docs/prologue/syntax.md" >}}#bindings) (values that only unify with themselves) that are powerful enough to express any algebraic data type.
 
 As an example, consider the standard inductive definition of natural numbers as [peano numbers](https://en.wikipedia.org/wiki/Peano_axioms) (given in Haskell syntax)
 
