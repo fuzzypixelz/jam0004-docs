@@ -58,5 +58,5 @@ only the other one is left. Of course, if both options fail then the choice also
 fails.
 
 ```h
-choice = expr || expr
+choice = expr | expr
 ```
