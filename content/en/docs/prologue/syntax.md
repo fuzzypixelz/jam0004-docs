@@ -60,5 +60,3 @@ fails.
 ```h
 choice = expr || expr
 ```
-
-
