@@ -52,7 +52,9 @@ e.g.
 let f = \\x -\u003e [C, x] in f (C | E | G) is equivalent to
 [C, C] | [C, E] | [C, G] If unification inside any branch of the choice fails, it is ignored. In other words, failure | something is equivalent to something.
 This can be used to emulate ML-style pattern matching
-let nextOctave = \\note -\u003e (note = C in C/5) | (note = D in D/5) | (note = E in E/5) | (note = F in F/5) | (note = G in G/5) | (note = A in A/5) | (note = B in B/5) in nextOctave C Constants # You may notice that Ludwig doesn\u0026rsquo;t have any built-in syntax for numbers or any data structures besides lists. Does this mean you cannot express anything non-trivial?
+let nextOctave = \\note -\u003e (note = C in C/5) | (note = D in D/5) | (note = E in E/5) | (note = F in F/5) | (note = G in G/5) | (note = A in A/5) | (note = B in B/5) in nextOctave C On the musical side, choice provides the ability to compose music for each hand individually while being able to fearlessly combine them with choice.
+Thanks to the properties of choice, these will, as expected, play at the same time without the need to map over lists or make any assumptions about the notes played by each hand.
+let hand1 = [4/B/3, 4/B/3, 4/C, 4/D, 4/D, 4/C, 4/B/3, 4/A/3, 4/G/3, 4/G/3, 4/A/3, 4/B/3, 4/B/3, 8/B/3, 8/A/3, 2/A/3, 4/B/3, 4/B/3, 4/C, 4/D, 4/D, 4/C, 4/B/3, 4/A/3] in let hand2 = [ (1/G/2 | 1/B/2 | 1/D/3), (1/F#/2 | 1/C/3 | 1/E/3), (1/G/2 | 1/B/2 | 1/D/3), (2/G/2 | 2/B/2 | 2/D/3), (2/F#/2 | 2/C/3 | 2/E/3), (1/G/2 | 1/B/2 | 1/D/3), (1/F#/2 | 1/C/3 | 1/E/3) ] in hand1 | hand2 Constants # You may notice that Ludwig doesn\u0026rsquo;t have any built-in syntax for numbers or any data structures besides lists. Does this mean you cannot express anything non-trivial?
 No! Ludwig has the ability to declare constants (values that only unify with themselves) that are powerful enough to express any algebraic data type.
 As an example, consider the standard inductive definition of natural numbers as peano numbers (given in Haskell syntax)
 data Nat = Z | S Nat Defining constants for the possible data constructors (Z and S in this case) is enough to express these with full support for pattern matching
