@@ -14,7 +14,7 @@
       <guid>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/introduction/</guid>
       <description>Ludwig programs are just expressions that evaluate to a lazy list of notes. These can contain non-deterministic choices between notes, which will be played at the same time.
 Getting started # The easiest way to play with Ludwig is through the playground.
-If you&amp;rsquo;d like to build Ludwig from source, clone the source and build the project using the luwig npm script, my tests in particular were done on macOS using npm v9.</description>
+If you&amp;rsquo;d like to build Ludwig from source, clone the source repository and build the project using the luwig npm script, my tests in particular were done on macOS using npm v9.</description>
     </item>
     
     <item>
