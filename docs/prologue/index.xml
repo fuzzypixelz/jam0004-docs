@@ -12,7 +12,7 @@
       <pubDate>Tue, 06 Oct 2020 08:48:57 +0000</pubDate>
       
       <guid>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/introduction/</guid>
-      <description>Getting started # The easiest way to play with Ludwig is through the playground
+      <description>Getting started # The easiest way to play with Ludwig is through the playground.
 If you&amp;rsquo;d like to build Ludwig from source, clone the source and build the project using the luwig npm script, my tests in particular were done on macOS using npm v9.4.0 and node v19.6.1.
 git clone git@github.com:fuzzypixelz/jam0004.git cd ludwig npm run ludwig open dest/index.html Next, webpack should generate the build files under dest/. Simply open the index.</description>
     </item>
