@@ -174,6 +174,18 @@ in
 nextOctave C
 </div>
 
+On the musical side, choice provides the ability to compose music for each hand individually while being able to fearlessly combine them with choice. 
+
+Thanks to the properties of choice, these will, as expected, play at the same time without the need to map over lists or make any assumptions about the notes played by each hand.
+
+<div class="example">
+let hand1 = [4/B/3, 4/B/3, 4/C, 4/D, 4/D, 4/C, 4/B/3, 4/A/3, 4/G/3, 4/G/3, 4/A/3, 4/B/3, 4/B/3, 8/B/3, 8/A/3, 2/A/3, 4/B/3, 4/B/3, 4/C, 4/D, 4/D, 4/C, 4/B/3, 4/A/3]
+in
+let hand2 = [ (1/G/2 | 1/B/2 | 1/D/3), (1/F#/2 | 1/C/3 | 1/E/3), (1/G/2 | 1/B/2 | 1/D/3), (2/G/2 | 2/B/2 | 2/D/3), (2/F#/2 | 2/C/3 | 2/E/3), (1/G/2 | 1/B/2 | 1/D/3), (1/F#/2 | 1/C/3 | 1/E/3) ] 
+in
+hand1 | hand2
+</div>
+
 ## Constants
 
 You may notice that Ludwig doesn't have any built-in syntax for numbers or *any* data structures besides lists.
