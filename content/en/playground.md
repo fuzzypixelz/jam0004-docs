@@ -9,5 +9,5 @@ let bass = [ (1/G/2 | 1/B/2 | 1/D/3), (1/F#/2 | 1/C/3 | 1/E/3), (1/G/2 | 1/B/2 |
 in
 melody | bass
 </textarea>
-<button id="playground-play">Play</button>
+<button id="playground-play" class="btn">Play</button>
 <p id="error-messages"></p>

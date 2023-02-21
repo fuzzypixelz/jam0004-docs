@@ -15,7 +15,7 @@ toc: true
 
 ## Getting started
 
-The easiest way to play with Ludwig is through the [playground]({{<relref "playground.md">}})
+The easiest way to play with Ludwig is through the [playground]({{<relref "playground.md">}}).
 
 If you'd like to build Ludwig from source, clone the source and build the
 project using the `luwig` npm script, my tests in particular were done on macOS
