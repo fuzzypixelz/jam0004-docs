@@ -511,7 +511,7 @@
 			<p>As a functional logic language, Ludwig does not need many language constructs to be expressive.
 For the precise syntax, refer to <a href="https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/">Syntax</a>.</p>
 <h2 id="notes">Notes <a href="#notes" class="anchor" aria-hidden="true">#</a></h2>
-<p>Of course no language for creating music would be complete without a way to express the notes that should be played.
+<p>Of course, no language for creating music would be complete without a way to express the notes that should be played.
 In fact, these are one of the only kinds of literals that Ludwig has <a href="https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/#musical-notes">dedicated syntax</a> for.</p>
 <p>Because every Ludwig program is just one large expression that is lazily evaluated and played, individual notes are already valid songs.</p>
 <div class="example">
@@ -583,7 +583,7 @@ x = C in
 E = y in
 [x, y]
 </div>
-<p><code>x</code> is substituted with <code>C</code> and <code>y</code> is substituted with <code>E</code>, so that
+<p><code>x</code> is substituted with <code>C</code> and <code>y</code> is substituted with <code>E</code> so that
 both unification expressions are satisfied.</p>
 <p>Why is this useful? Because nothing prevents the arguments to a unification expression to be more complicated structures!
 For example, extracting the first element of a list could be achieved with this function</p>
@@ -599,13 +599,13 @@ head [C, D, E]
 <p>Fun fact: &lsquo;basic&rsquo; let bindings of the form <code>let x = expr in expr2</code> are just syntactic sugar for free let bindings and unification (<code>let x in x = expr in expr2</code>)</p>
 <h2 id="choice">Choice <a href="#choice" class="anchor" aria-hidden="true">#</a></h2>
 <p>How do you play two notes at the same time?
-Say you want to play a C major chord. This would involve playing <code>C</code>, <code>E</code> and <code>G</code> at the same time.</p>
-<p>How do you write an expression in ludwig that does this?
-Well, you write one that returns <em>all thre notes at the same time</em>. This is what <a href="https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/#choice">logical/non-deterministic choice</a> does.</p>
+Say you want to play a C major chord. This would involve playing <code>C</code>, <code>E</code>, and <code>G</code> at the same time.</p>
+<p>How do you write an expression in Ludwig that does this?
+Well, you write one that returns <em>all three notes at the same time</em>. This is what <a href="https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/#choice">logical/non-deterministic choice</a> does.</p>
 <div class="example">
 C | E | G
 </div>
-<p>The intuition for choice is really that a choice expression returns all values at the same time (though the implementation is closer to spacial choice from the <a href="https://simon.peytonjones.org/assets/pdfs/verse-conf.pdf">Verse Calculus</a>).</p>
+<p>The intuition for choice is really that a choice expression returns all values at the same time (though the implementation is closer to spatial choice from the <a href="https://simon.peytonjones.org/assets/pdfs/verse-conf.pdf">Verse Calculus</a>).</p>
 <p>Applying any operation to the result of a choice is equivalent to the choice between applying it to all results individually</p>
 <p>e.g.</p>
 <div class="example">
@@ -633,7 +633,7 @@ nextOctave C
 <h2 id="constants">Constants <a href="#constants" class="anchor" aria-hidden="true">#</a></h2>
 <p>You may notice that Ludwig doesn&rsquo;t have any built-in syntax for numbers or <em>any</em> data structures besides lists.
 Does this mean you cannot express anything non-trivial?</p>
-<p>No! Ludwig has the ability to <a href="https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/#constants">declare constants</a> (values that only unify with themselves) which are powerful enough to express any algebraic data type.</p>
+<p>No! Ludwig has the ability to <a href="https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/#constants">declare constants</a> (values that only unify with themselves) that are powerful enough to express any algebraic data type.</p>
 <p>As an example, consider the standard inductive definition of natural numbers as <a href="https://en.wikipedia.org/wiki/Peano_axioms">peano numbers</a> (given in Haskell syntax)</p>
 <pre><code class="language-hs">data Nat = Z | S Nat
 </code></pre>
@@ -659,7 +659,7 @@ replicate (add (S (S Z)) (S (S (S Z)))) C
 <hr>
 <ol>
 <li id="fn:1">
-<p>You may notice that this example is not playable. This is because Ludwig can only play notes, lists of notes or choices between the former. If you type this into the <a href="https://fuzzypixelz.github.io/jam0004-docs/playground/">playground</a> anyway, you will see a (slightly cryptic) runtime error. What would it even mean to play the function <code>\x -&gt; x</code>?&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
+<p>You may notice that this example is not playable. This is because Ludwig can only play notes, lists of notes, or choices between the former. If you type this into the <a href="https://fuzzypixelz.github.io/jam0004-docs/playground/">playground</a> anyway, you will see a (slightly cryptic) runtime error. What would it even mean to play the function <code>\x -&gt; x</code>?&#160;<a href="#fnref:1" class="footnote-backref" role="doc-backlink">&#x21a9;&#xfe0e;</a></p>
 </li>
 </ol>
 </div>
@@ -710,7 +710,7 @@ replicate (add (S (S Z)) (S (S (S Z)))) C
 <script src="https://fuzzypixelz.github.io/jam0004-docs/js/bootstrap.min.650aeec64c81d69d4c0850fc73c93da3f0330cec0a27772feed7f90f60baa5f47f1c45687d71914bdafd1c4e860d40f6dc08ede27a2f08431ff929c9a2d24621.js" integrity="sha512-ZQruxkyB1p1MCFD8c8k9o/AzDOwKJ3cv7tf5D2C6pfR/HEVofXGRS9r9HE6GDUD23Ajt4novCEMf&#43;SnJotJGIQ==" crossorigin="anonymous" defer></script>
   <script src="https://fuzzypixelz.github.io/jam0004-docs/js/highlight.min.3f0a703c54cbed82ca277187e23cf2d272da28c15ce7e33cde685d40b53d741893d5b74d35bb2d20a81f56c289084f245bdd0c9145d39d7094d3dfbc62d1326a.js" integrity="sha512-PwpwPFTL7YLKJ3GH4jzy0nLaKMFc5&#43;M83mhdQLU9dBiT1bdNNbstIKgfVsKJCE8kW90MkUXTnXCU09&#43;8YtEyag==" crossorigin="anonymous" defer></script>
   <script src="https://fuzzypixelz.github.io/jam0004-docs/main.min.cb2e2ebbf2e4002f3117addc33582923b2b3ae5265c22944cd117ebec7abe61c170417c4506d7a0f8f0fc9053dfdf441421d53601ac467042ff3d06ec0ba07fa.js" integrity="sha512-yy4uu/LkAC8xF63cM1gpI7KzrlJlwilEzRF&#43;vser5hwXBBfEUG16D48PyQU9/fRBQh1TYBrEZwQv89BuwLoH&#43;g==" crossorigin="anonymous" defer></script>
-  <script src="https://fuzzypixelz.github.io/jam0004-docs/index.min.1b814baa9c99376013fa0d5bfdc8de43ced04fa996df71e8c0e3c63b7cce023543c2048d8edcd34b1e5d08ed5532a4ff4449893e22a401dda364e03488bc523c.js" integrity="sha512-G4FLqpyZN2AT&#43;g1b/cjeQ87QT6mW33HowOPGO3zOAjVDwgSNjtzTSx5dCO1VMqT/REmJPiKkAd2jZOA0iLxSPA==" crossorigin="anonymous" defer></script>
+  <script src="https://fuzzypixelz.github.io/jam0004-docs/index.min.f3a681f521044f61084fe5d89a05b72aa89534a187a276bf00ee2844db92e93dbc8beebc572465abaf07812ba559183e3c073c2cb84385b484c8754d16b66bbe.js" integrity="sha512-86aB9SEET2EIT&#43;XYmgW3KqiVNKGHona/AO4oRNuS6T28i&#43;68VyRlq68HgSulWRg&#43;PAc8LLhDhbSEyHVNFrZrvg==" crossorigin="anonymous" defer></script>
   
     
   </body>

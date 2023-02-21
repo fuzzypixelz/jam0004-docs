@@ -34,7 +34,7 @@ number = (0 || 1 || ...)+ Musical notes # Ludwig has special syntax for expressi
       
       <guid>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/languageconstructs/</guid>
       <description>As a functional logic language, Ludwig does not need many language constructs to be expressive. For the precise syntax, refer to Syntax.
-Notes # Of course no language for creating music would be complete without a way to express the notes that should be played. In fact, these are one of the only kinds of literals that Ludwig has dedicated syntax for.
+Notes # Of course, no language for creating music would be complete without a way to express the notes that should be played. In fact, these are one of the only kinds of literals that Ludwig has dedicated syntax for.
 Because every Ludwig program is just one large expression that is lazily evaluated and played, individual notes are already valid songs.</description>
     </item>
     
