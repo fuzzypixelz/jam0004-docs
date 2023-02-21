@@ -27,5 +27,16 @@ git clone git@github.com:fuzzypixelz/jam0004.git cd ludwig npm run ludwig open d
 number = (0 || 1 || ...)+ Musical notes # Ludwig has special syntax for expressing the value, pitch and octave of a musical note using the following syntax:</description>
     </item>
     
+    <item>
+      <title>Language Constructs</title>
+      <link>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/languageconstructs/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/languageconstructs/</guid>
+      <description>As a functional logic language, Ludwig does not need many language constructs to be expressive. For the precise syntax, refer to Syntax.
+Notes # Of course no language for creating music would be complete without a way to express the notes that should be played. In fact, these are one of the only kinds of literals that Ludwig has dedicated syntax for.
+Because every Ludwig program is just one large expression that is lazily evaluated and played, individual notes are already valid songs.</description>
+    </item>
+    
   </channel>
 </rss>
