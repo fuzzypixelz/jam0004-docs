@@ -12,7 +12,7 @@ means _zero or one_ occurrences of `expr` and finally `expr || expr'` means
 _either_ the form `expr` or `expr'`. For example an non-negative integer literal
 can be written as:
 
-```
+```h
 number = (0 || 1 || ...)+
 ```
 
@@ -24,7 +24,7 @@ Ludwig has special syntax for expressing the
 [octave](https://en.wikipedia.org/wiki/Octave) of a musical note using the
 following syntax:
 
-```
+```h
 pitch =
   || A
   || A# || Bb
@@ -57,7 +57,7 @@ Choice expressions are of the form `lhs | rhs`; Ludwig evaluates both `lhs` and
 only the other one is left. Of course, if both options fail then the choice also
 fails.
 
-```
+```h
 choice = expr || expr
 ```
 
