@@ -65,7 +65,7 @@ value (i.e duration) 1/8. Underscore (i.e `_`) denotes a pause.
 
 The syntax for (cons) lists is shared by many other ML-family languages:
 
-```
+```h
 list = 
     | '[' ((expr ',')* expr)? ']'
     | expr ':' expr
