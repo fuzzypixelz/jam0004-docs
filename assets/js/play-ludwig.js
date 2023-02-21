@@ -1,7 +1,7 @@
 import { playLudwigProgram } from './ludwig.js';
 
-for (const exampleDiv of document.querySelectorAll('div.example')) {
-    const program = exampleDiv.textContent
+for (const exampleDiv of document.querySelectorAll('.example')) {
+    const program = exampleDiv.textContent.trim()
     exampleDiv.textContent = ''
 
     const codeChild = document.createElement('code')
@@ -16,7 +16,8 @@ for (const exampleDiv of document.querySelectorAll('div.example')) {
     codeChild.classList.add('hljs')
 
     buttonChild.textContent = 'Play'
-    buttonChild.classList.add('btn')
+    buttonChild.classList.add("btn")
+    buttonChild.classList.add("btn-secondary")
 
     buttonChild.addEventListener('click', () => {
         errorChild.textContent = '';
