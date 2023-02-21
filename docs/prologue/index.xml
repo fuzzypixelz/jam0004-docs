@@ -23,8 +23,9 @@ git clone git@github.com:fuzzypixelz/jam0004.git cd ludwig npm run ludwig open d
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       
       <guid>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/</guid>
-      <description>In the following expr* means zero or more repetitions of the syntax form expr, while expr+ means one or more repetitions or expr and expr? means zero or one occurrences of expr and finally expr || expr&#39; means either the form expr or expr&#39;. For example an non-negative integer literal can be written as:
-number = (0 || 1 || ...)+ Musical notes # Ludwig has special syntax for expressing the value, pitch and octave of a musical note using the following syntax:</description>
+      <description>In the following expr* means zero or more repetitions of the syntax form expr, while expr+ means one or more repetitions or expr and expr? means zero or one occurrences of expr and finally expr | expr&#39; means either the form expr or expr&#39;. For example an non-negative integer literal can be written as:
+digit = &#39;0&#39; | ... | &#39;9&#39; number = digit+ Likewise we define identifiers:
+identifier_start = (&#39;A&#39; | .</description>
     </item>
     
     <item>
