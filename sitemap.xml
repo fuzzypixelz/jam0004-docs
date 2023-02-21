@@ -56,6 +56,12 @@
   </url>
   
   <url>
+    <loc>https://fuzzypixelz.github.io/jam0004-docs/docs/prologue/syntax/</loc>
+    <changefreq>weekly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://fuzzypixelz.github.io/jam0004-docs/tags/</loc>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
