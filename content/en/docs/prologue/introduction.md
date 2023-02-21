@@ -13,6 +13,8 @@ weight: 10
 toc: true
 ---
 
+Ludwig programs are just expressions that evaluate to a lazy list of notes. These can contain [non-deterministic choices]({{< relref "docs/prologue/languageconstructs" >}}#choice) between notes, which will be played at the same time.
+
 ## Getting started
 
 The easiest way to play with Ludwig is through the [playground]({{<relref "playground.md">}}).
