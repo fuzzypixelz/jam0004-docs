@@ -11,7 +11,7 @@ As a functional logic language, Ludwig does not need many language constructs to
 For the precise syntax, refer to [Syntax]({{< relref "docs/prologue/syntax.md" >}}).
 
 ## Notes
-Of course no language for creating music would be complete without a way to express the notes that should be played.
+Of course, no language for creating music would be complete without a way to express the notes that should be played.
 In fact, these are one of the only kinds of literals that Ludwig has [dedicated syntax]({{< relref "docs/prologue/syntax.md" >}}#musical-notes) for.
 
 Because every Ludwig program is just one large expression that is lazily evaluated and played, individual notes are already valid songs.
@@ -115,7 +115,7 @@ E = y in
 [x, y]
 </div>
 
-`x` is substituted with `C` and `y` is substituted with `E`, so that
+`x` is substituted with `C` and `y` is substituted with `E` so that
 both unification expressions are satisfied.
 
 Why is this useful? Because nothing prevents the arguments to a unification expression to be more complicated structures!
@@ -134,16 +134,16 @@ Fun fact: 'basic' let bindings of the form `let x = expr in expr2` are just synt
 
 ## Choice
 How do you play two notes at the same time?
-Say you want to play a C major chord. This would involve playing `C`, `E` and `G` at the same time.
+Say you want to play a C major chord. This would involve playing `C`, `E`, and `G` at the same time.
 
-How do you write an expression in ludwig that does this?
-Well, you write one that returns *all thre notes at the same time*. This is what [logical/non-deterministic choice]({{< relref "/docs/prologue/syntax.md" >}}#choice) does.
+How do you write an expression in Ludwig that does this?
+Well, you write one that returns *all three notes at the same time*. This is what [logical/non-deterministic choice]({{< relref "/docs/prologue/syntax.md" >}}#choice) does.
 
 <div class="example">
 C | E | G
 </div>
 
-The intuition for choice is really that a choice expression returns all values at the same time (though the implementation is closer to spacial choice from the [Verse Calculus](https://simon.peytonjones.org/assets/pdfs/verse-conf.pdf)).
+The intuition for choice is really that a choice expression returns all values at the same time (though the implementation is closer to spatial choice from the [Verse Calculus](https://simon.peytonjones.org/assets/pdfs/verse-conf.pdf)).
 
 Applying any operation to the result of a choice is equivalent to the choice between applying it to all results individually
 
@@ -179,7 +179,7 @@ nextOctave C
 You may notice that Ludwig doesn't have any built-in syntax for numbers or *any* data structures besides lists.
 Does this mean you cannot express anything non-trivial? 
 
-No! Ludwig has the ability to [declare constants]({{< relref "/docs/prologue/syntax.md" >}}#constants) (values that only unify with themselves) which are powerful enough to express any algebraic data type.
+No! Ludwig has the ability to [declare constants]({{< relref "/docs/prologue/syntax.md" >}}#constants) (values that only unify with themselves) that are powerful enough to express any algebraic data type.
 
 As an example, consider the standard inductive definition of natural numbers as [peano numbers](https://en.wikipedia.org/wiki/Peano_axioms) (given in Haskell syntax)
 
@@ -208,4 +208,4 @@ replicate (add (S (S Z)) (S (S (S Z)))) C
 </div>
 
 
-[^not-runnable]: You may notice that this example is not playable. This is because Ludwig can only play notes, lists of notes or choices between the former. If you type this into the [playground]({{< relref "/playground" >}}) anyway, you will see a (slightly cryptic) runtime error. What would it even mean to play the function `\x -> x`?
+[^not-runnable]: You may notice that this example is not playable. This is because Ludwig can only play notes, lists of notes, or choices between the former. If you type this into the [playground]({{< relref "/playground" >}}) anyway, you will see a (slightly cryptic) runtime error. What would it even mean to play the function `\x -> x`?
