@@ -45,8 +45,8 @@ Jam](https://github.com/langjam/langjam). This edition's theme is:
 At first we thought of making a language where all tokens can be typed using
 _only_ one side of the keyboard — we would quickly get disenchanted with this
 idea. After a fair bit of Brainstorming™ we thought of making a language which
-plays musical notes while _de-duplicating_ notes of the same pitch (more on this
-later).
+plays musical notes. 
+Having discussed logic programming and the upcoming verse, the thought of using choice to play the notes typed with each hand at the same time came quite naturally.
 
 We then decided to design Ludwig as a lazy functional logic programming language on
 the browser.
